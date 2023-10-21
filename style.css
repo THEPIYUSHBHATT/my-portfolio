@@ -416,3 +416,72 @@ header {
 .services__right p{
   margin-bottom: 0.8rem;
 }
+
+                    /* Projects */
+
+                    
+.projects__categories{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 2.5rem;
+  flex-wrap: wrap;
+
+}       
+
+.projects__categories li{
+  background: var(--color-gray-100);
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-4);
+  font-weight: 500;
+  font-size: 0.8rem ;
+  cursor: pointer;
+  transition: var(--transition)
+
+
+}
+
+.projects__categories li:hover , .projects__categories li.active{
+  background: var(--color-primary);
+  color: var(--color-gray-100);
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem,1fr));
+  gap: 3.5rem;/
+}
+
+.project {
+  background: var(--color-gray-100);
+  padding: 1.4rem;
+  transition: var(--transition);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.project:hover {
+  box-shadow: 0.3rem, 2rem , rgba(0,0,0,0.1);
+}
+
+.project__image{
+  height:auto;
+  max-height: 12rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-4);
+  overflow: hidden;
+}
+
+.project p{
+  margin:  0.5rem 0 1.5rem;
+}
+
+.project__cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
