@@ -41,3 +41,34 @@ var mixer = mixitup(containerEl, {
     }
 });
 mixer.filter('*');
+
+
+const navMenu = document.querySelector('.nav__menu')
+const navOpenBtn = document.querySelector('.nav__toggle-open')
+const navClosebtn = document.querySelector('.nav__toggle-close')
+
+const openNavHandler = () => {
+
+    navMenu.style.display = 'flex';
+    navOpenBtn.style.display = 'none';
+    navClosebtn.style.display = 'inline-block';
+
+}
+
+const closeNavHandler = () => {
+
+    navMenu.style.display = 'none';
+    navOpenBtn.style.display = 'inline-block';
+    navClosebtn.style.display = 'none';
+
+}
+
+navOpenBtn.addEventListener('click', openNavHandler)
+navClosebtn.addEventListener('click', closeNavHandler)
+
+const navItems = navMenu.querySelectorAll('a');
+if(window.innerWidth < 768) {
+    navItems.forEach(item =>{
+     item.addEventListener('click',closeNavHandler )
+    })
+}
