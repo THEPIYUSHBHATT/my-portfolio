@@ -425,10 +425,11 @@ header {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0 2.5rem;
+  margin: 4rem 0 2.5rem ;
   flex-wrap: wrap;
 
-}       
+}  
+
 
 .projects__categories li{
   background: var(--color-gray-100);
@@ -460,6 +461,14 @@ header {
   display: grid;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  animation: identifier 1.8s ease forwards;
+}
+
+@keyframes identifier{
+  to{
+    opacity:1;
+  }
 }
 
 .project:hover {

@@ -201,14 +201,13 @@
     <h1>Recenet Projects</h1>
     <p>where visualization comes to reality</p>
     <ul class="projects__categories">
-        <li class="active">All</li>
-        <li>Frontend</li>
-        <li>Backend</li>
-        <li>Designs</li>
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".frontend">Frontend</li>
+        <li data-filter=".design">Designs</li>
     </ul>
 
     <div class="container projects__container">
-        <article class="project frontend ">
+        <article class="project mix frontend" data-order="1">
             <div class="project__image">
                 <img src="./assets/spotify.png" alt="Project image">
             </div>
@@ -223,7 +222,7 @@
             </div>
         </article>
 
-        <article class="project frontend design">
+        <article class="project mix frontend design" data-order="2">
             <div class="project__image">
                 <img src="./assets/ai image generator.png" alt="Project image">
             </div>
@@ -239,7 +238,7 @@
         </article>
 
         
-        <article class="project frontend">
+        <article class="project mix frontend" data-order="3">
             <div class="project__image">
                 <img src="./assets/weather.png" alt="Project image">
             </div>
@@ -254,7 +253,7 @@
             </div>
         </article>
 
-        <article class="project frontend">
+        <article class="project mix frontend" data-order="4">
             <div class="project__image">
                 <img src="./assets/to do app.png" alt="Project image">
             </div>
@@ -269,7 +268,7 @@
             </div>
         </article>        
 
-        <article class="project design">
+        <article class="project mix design" data-order="5">
             <div class="project__image">
                 <img src="./assets/amazon clone.png" alt="Project image">
             </div>
@@ -284,7 +283,7 @@
             </div>
         </article> 
 
-        <article class="project frontend design">
+        <article class="project mix frontend design" data-order="6">
             <div class="project__image">
                 <img src="./assets/snake game.png" alt="Project Image ">
             </div>
@@ -303,9 +302,9 @@
     </div>
 
 </section>
-
+<script src="./mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
 <script src="data.js"></script>
- <script src="script.js" ></script>
+<script src="script.js" ></script>
 
 </body>
 </html>
