@@ -72,3 +72,28 @@ if(window.innerWidth < 768) {
      item.addEventListener('click',closeNavHandler )
     })
 }
+
+
+// dark theme toggle ///
+
+const themeBtn = document.querySelector('.nav__theme-btn');
+themeBtn.addEventListener('click', () => {
+    let bodyClass = document.body.className;
+    if(!bodyClass) {
+        bodyClass = 'dark';
+        document.body.className = bodyClass;
+
+      themeBtn.innerHTML = "<i class = 'uil   uil-sun'></i>"
+
+      window.localStorage.setItem('theme',bodyClass);
+    }else{
+        bodyClass = '';
+        document.body.className = bodyClass
+        themeBtn.innerHTML = "<i class = 'uil   uil-moon'></i>"
+    }
+    
+})
+
+window.addEventListener('load', () => {
+   document.body.className = window.localStorage.getItem('theme') 
+})

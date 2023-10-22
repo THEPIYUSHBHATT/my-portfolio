@@ -12,12 +12,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
 <!-- GOOGLE FONTS(OUTFIT) -->
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- Animate On Scroll  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
                                                                  <!-- NAV  -->
     <nav>
         <div class="container nav__container">
-            <a href="index.html" class="nav__logo">
+            <a href="index1.html" class="nav__logo">
                 <img src="./assets/logo.png" alt="navbar logo">
             </a>
 
@@ -53,13 +56,13 @@
     <header>
         <div class="container header__container">
 
-            <article class="header__image">
+            <article class="header__image" data-aos="fade-up" data-aos-delay="700ms">
              <div>
                 <img src="./assets/header.jpg" alt="header img">
              </div>   
             </article>
 
-            <article class="header__content">
+            <article class="header__content" data-aos="fade-in">
 
                 <h4>
                     Hi, I'm <span>Piyush Bhatt</span>. And I'll
@@ -115,7 +118,7 @@
             <img src="./assets/about (1).jpg" alt="about img">
          </div>
          
-         <div class="about__details">
+         <div class="about__details" data-aos="fade-in" data-aos-delay="300ms">
              <h1>About me</h1>
              <div class="about__cards">
                 <article class="about__card">
@@ -185,8 +188,8 @@
 
         </ul>
 
-        <article class="services__right">
-           p
+        <article class="services__right" data-aos="fade-in" data-aos-delay="200ms">
+           
         </article>
     </div>
 
@@ -206,7 +209,7 @@
         <li data-filter=".design">Designs</li>
     </ul>
 
-    <div class="container projects__container">
+    <div class="container projects__container" data-aos="fade-in">
         <article class="project mix frontend" data-order="1">
             <div class="project__image">
                 <img src="./assets/spotify.png" alt="Project image">
@@ -312,25 +315,25 @@
 <section class="contact" id="contact">
     <div class="container contact__container">
         <ul class="contact__list">
-            <li>
+            <li data-aos="fade-in">
                 <a href="mailto:piyushbhatt053@gmail.com" class="contact__list-item" target="_blank">
                 <i class="uil uil-envelope"></i>
                 </a>
             </li>
 
-            <li>
+            <li data-aos="fade-in" data-aos-delay="150ms">
                 <a href="https://wa.me/+918595135918" class="contact__list-item" target="_blank">
                 <i class="uil uil-whatsapp"></i>
                 </a>
             </li>
 
-            <li>
+            <li data-aos="fade-in" data-aos-delay="300ms">
                 <a href="tel: 8595135918" class="contact__list-item" target="_blank">
                 <i class="uil uil-phone"></i>
                 </a>
             </li>
 
-            <li>
+            <li data-aos="fade-in" data-aos-delay="450ms">
                 <a href="https://www.instagram.com/t/leo_piyush" class="contact__list-item" target="_blank">
                 <i class="uil uil-instagram-alt"></i>
                 </a>
@@ -338,7 +341,7 @@
           
         </ul>
 
-        <form action="https://formsubmit.co/69784306a1df4cbe406246ff43de1227" method="POST"class="contact__form">
+        <form action="https://formsubmit.co/69784306a1df4cbe406246ff43de1227" method="POST"class="contact__form" data-aos="fade-up" data-aos-delay="600ms">
             <input type="text" name="Name"
             placeholder="Full Name">
             <input type="email"
@@ -401,6 +404,10 @@
 
 
 <script src="./mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1500, offset: 80});
+</script>
 <script src="data.js"></script>
 <script src="script.js" ></script>
 
